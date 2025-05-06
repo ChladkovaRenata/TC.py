@@ -1,0 +1,51 @@
+TASK MANAGER 
+
+Zadání číslo 1
+Testovací případ:
+- Popis: ověření, že volba “1” v hlavním menu správně spustí funkci pridat_ukol().
+- Vstup podmínky: program zobrazuje hlavní menu.
+- Krok testu 1:
+1. Spustit program
+2. Ověřit zda se zobrazí hlavní menu s nabídkou ( např.” 1. Přidat úkol, 2. Zobrazit úkoly, apod. …”).
+3. Zadat číslo 1 a potvrdit stisknutím klávesy Enter.
+
+- Očekávaný výsledek:
+Program spustí funkci pridat_ukol(). Úkol se přidá a nevyplněný řádek dá chybnou hlášku
+- Skutečný výsledek:
+Funkce pridat_ukol() byla spuštěna a program požádal k zadání nového úkolu.
+Při nevyplnění řádku – zobrazí se chybná hláška
+Zobrazí se znovu hlavní menu pro další volby.
+Stav: pass
+Poznámky: tento případ je velmi důležitý, protože ověřuje základní navigavi z hlavního menu a funkčnost z klíčových funkcí programu.
+
+Pokračování v testovaní:
+Krok 2: 
+Popis- ověření že volba “2” v hlavním menu se spustila ve funkci zobrazit_ukoly().
+Zvolit volbu 2 a zobrazí se seznam všech úkolů 
+
+- Očekávaný výsledek:
+Program spusti funkci zobrazit_ukoly()
+- Skutečný výsledek:
+Funkce zobrazit_ukoly() se spustit a ukáže celý nový seznam všech úkolů i toho přidaného.
+Zobrazí se znovu hlavní menu pro další volby
+Stav: pass
+
+Krok 3:
+Popis:
+1. ověření, že volba ´´3´´ v hlavním menu se spustila ve funkci odstranit_ukol().
+2. Odtsranit úkol, který jsme vytvořili předtím.
+
+- Očekávaný výsledek:
+Program spustí funkci odstranit_ukol() a vypíše se výzva k vyplnění řádku pro odstranění úkolu
+- Skutečný výsledek:
+Funkce odstranit_ukol() se spustila a požádá abychom vyplnili řádek ohledně toho, jaký úkol chceme vymazat.
+Zadali jsme číslo a úkol se v pořádku vymazal.
+Stav: pass
+Krok 4:
+Popis:
+Ověření, že volba ´´4´´ se spustila.
+- Očekávaný výsledek:
+Program spustí volbu ´´4´´ a program se ukončí
+- Skutečný výsledek:
+Program se ukončil s hláškou "Program ukončen."
+Stav: pass
