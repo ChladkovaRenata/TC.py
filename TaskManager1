@@ -28,6 +28,7 @@ def hlavni_menu():
 
 #definovat pridat_ukol, krok 1 - pokus se zvolí volba "1", tak zda se úkol přidá + přidá se nový název úkolu,
 #krok 2- pokud uživatel zadá přidat_ukol, ale nevyplní nic do návzu úkolu, tak program odmítne prázdný vstup (zobrazí se chyba), program čeká na vyplnění.
+#krok 3- objeví se hlavní menu 
 def pridat_ukol():
     nazev = input("Zadej název úkolu: ").strip()
     if nazev:
@@ -38,6 +39,7 @@ def pridat_ukol():
 
 #definovat zobrazit_ukol, krok 1 - po volbě "2" se zobrazí prázdný seznam a informuje, že nejsou žádné úkoly
 #krok 2 - zobrazí se existující úkol a vypíše je.
+#krok 3- objeví se hlavní menu 
 def zobrazit_ukoly():
     if len(ukoly) == 0:
         print("Seznam úkolů je prázdný.")
@@ -49,7 +51,7 @@ def zobrazit_ukoly():
             i += 1
 
 #definovat odstranit_ukol, krok 1 - odtsranění úkolu, zda se úspěšné odstranil
-#krok 2- objeví se hlavnáí menu 
+#krok 2- objeví se hlavní menu 
 def odstranit_ukol():
     zobrazit_ukoly()
     if len(ukoly) == 0:
@@ -65,7 +67,7 @@ def odstranit_ukol():
     except ValueError:
         print("Chyba: Zadej platné číslo.")
 
-
+#po volbě "4" se program ukončí
 
 
 #spuštění
